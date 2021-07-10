@@ -28,7 +28,11 @@ root.geometry("900x700")
 root.title("covid tracker")
 f = ("poppins", 25 , "bold")
 
-textfield=tk.Label(root, width=50)
+banner = tk.PhotoImage(file="icon.png")
+bannerlabel = tk.Label(root, image=banner)
+bannerlabel.pack()
+
+textfield=tk.Label(root, width=10)
 textfield.pack()
 
 mainlabel = tk.Label(root,  text=get_covid_data(), font=f)
